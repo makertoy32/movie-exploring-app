@@ -11,7 +11,7 @@ function App() {
   const [error, setError] = useState("");
   const [selectedMovie, setSelectedMovie] = useState(null);
 
-  const token = import.meta.env.VITE_TMDB_TOKEN;
+  const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZGEwMDAyOGM3MzBiOTVjMDE2ZjIyODU3NDgxOTQ2YyIsIm5iZiI6MTc4OTU2MTUzNi43MDcsInN1YiI6IjZhYWE4YWMwZWE5ZjgyYTk5MGVjYmVkMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VNNbWtu_qaOy_IOsm-d6J283PIONOELgnqdEerG2uCw";
 
   // Lock background scrolling when modal is open
   useEffect(() => {
