@@ -34,4 +34,4 @@ A modern movie discovery web app built with React that allows users to search fo
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone [YOUR_GITHUB_REPOSITORY_URL](https://github.com/makertoy32/movie-exploring-app.git)
