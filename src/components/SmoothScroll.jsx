@@ -1,12 +1,16 @@
 import { useEffect } from "react";
 import Lenis from "lenis";
 
-function SmoothScroll() {
+function SmoothScroll({ disabled = false }) {
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
       smoothWheel: true,
     });
+
+    if (disabled) {
+      lenis.stop();
+    }
 
     function raf(time) {
       lenis.raf(time);
@@ -18,7 +22,7 @@ function SmoothScroll() {
     return () => {
       lenis.destroy();
     };
-  }, []);
+  }, [disabled]);
 
   return null;
 }
